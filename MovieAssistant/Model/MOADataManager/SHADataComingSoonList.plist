@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Zootopia</key>
+	<dict>
+		<key>1GeneralInfo</key>
+		<array>
+			<dict>
+				<key>backdrop_path</key>
+				<string>/mhdeE1yShHTaDbJVdWyTlzFvNkr.jpg</string>
+				<key>genre_ids</key>
+				<array>
+					<integer>16</integer>
+					<integer>12</integer>
+					<integer>10751</integer>
+					<integer>35</integer>
+				</array>
+				<key>original_language</key>
+				<string>en</string>
+				<key>original_title</key>
+				<string>Zootopia</string>
+				<key>overview</key>
+				<string>Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case - even if it means partnering with scam-artist fox Nick Wilde to solve the mystery.</string>
+				<key>popularity</key>
+				<real>10.903351000000001</real>
+				<key>poster_path</key>
+				<string>/sM33SANp9z6rXW8Itn7NnG1GOEs.jpg</string>
+				<key>release_date</key>
+				<string>2016-02-11</string>
+				<key>title</key>
+				<string>Zootopia</string>
+				<key>vote_average</key>
+				<real>7.4000000000000004</real>
+				<key>vote_count</key>
+				<integer>1863</integer>
+			</dict>
+			<dict>
+				<key>backdrop_path</key>
+				<string>/4w047Yz5N5o4cYSH1PkoblJehDW.jpg</string>
+				<key>genre_ids</key>
+				<array>
+					<integer>99</integer>
+				</array>
+				<key>original_language</key>
+				<string>en</string>
+				<key>original_title</key>
+				<string>Imagining Zootopia</string>
+				<key>overview</key>
+				<string>Fusion spent two years with the production team of Disney's smash hit film. In 'Imagining Zootopia,' you will travel with the team to Africa to explore the animals in their natural habitat and find out how the storytellers and animators dealt with the very real themes of prejudice and bias.</string>
+				<key>popularity</key>
+				<real>1.086244</real>
+				<key>poster_path</key>
+				<string>/aE9W1gG3OjBZI69n26vD6U8dFd.jpg</string>
+				<key>release_date</key>
+				<string>2016-04-05</string>
+				<key>title</key>
+				<string>Imagining Zootopia</string>
+				<key>vote_average</key>
+				<integer>6</integer>
+				<key>vote_count</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+		<key>2SavedInfo</key>
+		<array>
+			<dict>
+				<key>genre_ids</key>
+				<array>
+					<integer>16</integer>
+					<integer>12</integer>
+					<integer>10751</integer>
+					<integer>35</integer>
+				</array>
+				<key>original_title</key>
+				<string>Zootopia</string>
+				<key>overview</key>
+				<string>Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case - even if it means partnering with scam-artist fox Nick Wilde to solve the mystery.</string>
+				<key>poster_path</key>
+				<string>/sM33SANp9z6rXW8Itn7NnG1GOEs.jpg</string>
+				<key>release_date</key>
+				<string>2016-02-11</string>
+				<key>vote_average</key>
+				<real>7.4000000000000004</real>
+			</dict>
+			<dict>
+				<key>genre_ids</key>
+				<array>
+					<integer>99</integer>
+				</array>
+				<key>original_title</key>
+				<string>Imagining Zootopia</string>
+				<key>overview</key>
+				<string>Fusion spent two years with the production team of Disney's smash hit film. In 'Imagining Zootopia,' you will travel with the team to Africa to explore the animals in their natural habitat and find out how the storytellers and animators dealt with the very real themes of prejudice and bias.</string>
+				<key>poster_path</key>
+				<string>/aE9W1gG3OjBZI69n26vD6U8dFd.jpg</string>
+				<key>release_date</key>
+				<string>2016-04-05</string>
+				<key>vote_average</key>
+				<integer>6</integer>
+			</dict>
+		</array>
+		<key>3CellInfo</key>
+		<array>
+			<dict>
+				<key>original_title</key>
+				<string>Zootopia</string>
+				<key>poster_path</key>
+				<string>/sM33SANp9z6rXW8Itn7NnG1GOEs.jpg</string>
+				<key>release_date</key>
+				<string>2016-02-11</string>
+			</dict>
+			<dict>
+				<key>original_title</key>
+				<string>Imagining Zootopia</string>
+				<key>poster_path</key>
+				<string>/aE9W1gG3OjBZI69n26vD6U8dFd.jpg</string>
+				<key>release_date</key>
+				<string>2016-04-05</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

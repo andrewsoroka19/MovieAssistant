@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		522080EA1D6B582400E798A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 522080E91D6B582400E798A4 /* main.m */; };
+		522080ED1D6B582400E798A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 522080EC1D6B582400E798A4 /* AppDelegate.m */; };
+		522080F31D6B582400E798A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522080F11D6B582400E798A4 /* Main.storyboard */; };
+		522080F51D6B582400E798A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522080F41D6B582400E798A4 /* Assets.xcassets */; };
+		522080F81D6B582400E798A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522080F61D6B582400E798A4 /* LaunchScreen.storyboard */; };
+		522081081D6B5AC400E798A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522081071D6B5AC400E798A4 /* QuartzCore.framework */; };
+		52CA65DF1D744B23002D72E1 /* MOAConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA65DE1D744B23002D72E1 /* MOAConsts.m */; };
+		52CAA8BD1D76D4970083A981 /* SHADataComingSoon.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CAA8B51D76D4970083A981 /* SHADataComingSoon.m */; };
+		52CAA8BE1D76D4970083A981 /* SHADataComingSoonList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52CAA8B61D76D4970083A981 /* SHADataComingSoonList.plist */; };
+		52CAA8BF1D76D4970083A981 /* SHADataFavorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CAA8B81D76D4970083A981 /* SHADataFavorite.m */; };
+		52CAA8C01D76D4970083A981 /* SHADataFavoriteList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52CAA8B91D76D4970083A981 /* SHADataFavoriteList.plist */; };
+		52CAA8C11D76D4970083A981 /* SHASearchDataHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CAA8BB1D76D4970083A981 /* SHASearchDataHistory.m */; };
+		52CAA8C21D76D4970083A981 /* SHASearchDataHistoryList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52CAA8BC1D76D4970083A981 /* SHASearchDataHistoryList.plist */; };
+		52D107691D6C44B0000B825C /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D107681D6C44B0000B825C /* iCarousel.m */; };
+		52D1076F1D6C7F65000B825C /* MOASearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1076E1D6C7F65000B825C /* MOASearchTableViewController.m */; };
+		52D107771D6C7FAF000B825C /* MOAMapIconBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D107711D6C7FAF000B825C /* MOAMapIconBack.png */; };
+		52D107781D6C7FAF000B825C /* MOAMapIconCut.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D107721D6C7FAF000B825C /* MOAMapIconCut.png */; };
+		52D107791D6C7FAF000B825C /* MOAMapIconDirections.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D107731D6C7FAF000B825C /* MOAMapIconDirections.png */; };
+		52D1077A1D6C7FAF000B825C /* MOAMapIconMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D107741D6C7FAF000B825C /* MOAMapIconMenu.png */; };
+		52D1077B1D6C7FAF000B825C /* MOAMapIconSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D107751D6C7FAF000B825C /* MOAMapIconSearch.png */; };
+		52D1077C1D6C7FAF000B825C /* MOAMapIconStreetView.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D107761D6C7FAF000B825C /* MOAMapIconStreetView.png */; };
+		52D107811D6C8016000B825C /* MOAGoogleMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1077E1D6C8016000B825C /* MOAGoogleMapsViewController.m */; };
+		52D107821D6C8016000B825C /* MOAMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D107801D6C8016000B825C /* MOAMenuTableViewController.m */; };
+		52D107891D6C806A000B825C /* MOAMenuTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D107841D6C806A000B825C /* MOAMenuTableCellView.m */; };
+		52D1078A1D6C806A000B825C /* MOAMarkerInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D107861D6C806A000B825C /* MOAMarkerInfoWindow.m */; };
+		52D1078B1D6C806A000B825C /* MOAMenuTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D107881D6C806A000B825C /* MOAMenuTableCellView.xib */; };
+		52D1078D1D6C807F000B825C /* MOAMarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D1078C1D6C807F000B825C /* MOAMarkerInfoView.xib */; };
+		52D107901D6C80A7000B825C /* MOAServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1078F1D6C80A7000B825C /* MOAServerManager.m */; };
+		52D107941D6C8733000B825C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D107931D6C8733000B825C /* Social.framework */; };
+		52E69C0A1D6C433900710F81 /* MOADownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E69C091D6C433900710F81 /* MOADownloadManager.m */; };
+		52E69C101D6C438800710F81 /* MOAFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E69C0D1D6C438800710F81 /* MOAFilm.m */; };
+		52E69C111D6C438800710F81 /* MOATrailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E69C0F1D6C438800710F81 /* MOATrailer.m */; };
+		52E69C141D6C43E000710F81 /* MOAInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E69C131D6C43E000710F81 /* MOAInitialViewController.m */; };
+		52E69C1A1D6C440800710F81 /* MOAMovieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E69C191D6C440800710F81 /* MOAMovieManager.m */; };
+		58326DB92802EE1C250AE9E3 /* libPods-MovieAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 229B5317178FAD1C432ED70D /* libPods-MovieAssistant.a */; };
+		84072E041D893AFA00D18E58 /* MOAGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84072E031D893AFA00D18E58 /* MOAGradient.m */; };
+		84072E1C1D895C5000D18E58 /* Movie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84072E1B1D895C5000D18E58 /* Movie.xib */; };
+		84072E221D8AD74100D18E58 /* MOACollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84072E211D8AD74100D18E58 /* MOACollectionsViewController.m */; };
+		84F6EB511D75C16900AA3CF1 /* MOAMovieSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EB501D75C16900AA3CF1 /* MOAMovieSearchController.m */; };
+		84F6EB541D75D6ED00AA3CF1 /* MOACollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F6EB531D75D6ED00AA3CF1 /* MOACollectionViewCell.xib */; };
+		84F6EB571D75D73600AA3CF1 /* MOAMovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EB561D75D73600AA3CF1 /* MOAMovieCollectionViewCell.m */; };
+		84F6EB5A1D75F31300AA3CF1 /* MOASelectedMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EB591D75F31300AA3CF1 /* MOASelectedMovieViewController.m */; };
+		84F6EB5D1D75FE3D00AA3CF1 /* MOAGenres.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EB5C1D75FE3D00AA3CF1 /* MOAGenres.m */; };
+		BF5B66D21D91567500549C52 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5B66D01D91567500549C52 /* back.png */; };
+		BF5B66D31D91567500549C52 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5B66D11D91567500549C52 /* home.png */; };
+		BFF539E41D913F7D00088C87 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF539DF1D913F7D00088C87 /* bg.jpg */; };
+		BFF539E51D913F7D00088C87 /* button.ico in Resources */ = {isa = PBXBuildFile; fileRef = BFF539E01D913F7D00088C87 /* button.ico */; };
+		BFF539E61D913F7D00088C87 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF539E11D913F7D00088C87 /* map.png */; };
+		BFF539E71D913F7D00088C87 /* search.ico in Resources */ = {isa = PBXBuildFile; fileRef = BFF539E21D913F7D00088C87 /* search.ico */; };
+		BFF539E81D913F7D00088C87 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF539E31D913F7D00088C87 /* share.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		229B5317178FAD1C432ED70D /* libPods-MovieAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ED6465D2260062AFF662C50 /* Pods-MovieAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieAssistant/Pods-MovieAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		2F85232D35AE351A03749844 /* Pods-MovieAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieAssistant/Pods-MovieAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		522080E51D6B582400E798A4 /* MovieAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		522080E91D6B582400E798A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		522080EB1D6B582400E798A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		522080EC1D6B582400E798A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		522080F21D6B582400E798A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		522080F41D6B582400E798A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		522080F71D6B582400E798A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		522080F91D6B582400E798A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522081071D6B5AC400E798A4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		52CA65DD1D744B23002D72E1 /* MOAConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAConsts.h; path = Consts/MOAConsts.h; sourceTree = "<group>"; };
+		52CA65DE1D744B23002D72E1 /* MOAConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAConsts.m; path = Consts/MOAConsts.m; sourceTree = "<group>"; };
+		52CAA8B41D76D4970083A981 /* SHADataComingSoon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHADataComingSoon.h; path = MovieAssistant/Model/MOADataManager/SHADataComingSoon.h; sourceTree = "<group>"; };
+		52CAA8B51D76D4970083A981 /* SHADataComingSoon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHADataComingSoon.m; path = MovieAssistant/Model/MOADataManager/SHADataComingSoon.m; sourceTree = "<group>"; };
+		52CAA8B61D76D4970083A981 /* SHADataComingSoonList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SHADataComingSoonList.plist; path = MovieAssistant/Model/MOADataManager/SHADataComingSoonList.plist; sourceTree = "<group>"; };
+		52CAA8B71D76D4970083A981 /* SHADataFavorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHADataFavorite.h; path = MovieAssistant/Model/MOADataManager/SHADataFavorite.h; sourceTree = "<group>"; };
+		52CAA8B81D76D4970083A981 /* SHADataFavorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHADataFavorite.m; path = MovieAssistant/Model/MOADataManager/SHADataFavorite.m; sourceTree = "<group>"; };
+		52CAA8B91D76D4970083A981 /* SHADataFavoriteList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SHADataFavoriteList.plist; path = MovieAssistant/Model/MOADataManager/SHADataFavoriteList.plist; sourceTree = "<group>"; };
+		52CAA8BA1D76D4970083A981 /* SHASearchDataHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHASearchDataHistory.h; path = MovieAssistant/Model/MOADataManager/SHASearchDataHistory.h; sourceTree = "<group>"; };
+		52CAA8BB1D76D4970083A981 /* SHASearchDataHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHASearchDataHistory.m; path = MovieAssistant/Model/MOADataManager/SHASearchDataHistory.m; sourceTree = "<group>"; };
+		52CAA8BC1D76D4970083A981 /* SHASearchDataHistoryList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SHASearchDataHistoryList.plist; path = MovieAssistant/Model/MOADataManager/SHASearchDataHistoryList.plist; sourceTree = "<group>"; };
+		52D107671D6C44B0000B825C /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = Views/iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		52D107681D6C44B0000B825C /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = Views/iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		52D1076D1D6C7F65000B825C /* MOASearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOASearchTableViewController.h; path = "View Controllers/MOASearchTableViewController.h"; sourceTree = "<group>"; };
+		52D1076E1D6C7F65000B825C /* MOASearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOASearchTableViewController.m; path = "View Controllers/MOASearchTableViewController.m"; sourceTree = "<group>"; };
+		52D107711D6C7FAF000B825C /* MOAMapIconBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MOAMapIconBack.png; path = "Graphical Resources/Map icons/MOAMapIconBack.png"; sourceTree = "<group>"; };
+		52D107721D6C7FAF000B825C /* MOAMapIconCut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MOAMapIconCut.png; path = "Graphical Resources/Map icons/MOAMapIconCut.png"; sourceTree = "<group>"; };
+		52D107731D6C7FAF000B825C /* MOAMapIconDirections.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MOAMapIconDirections.png; path = "Graphical Resources/Map icons/MOAMapIconDirections.png"; sourceTree = "<group>"; };
+		52D107741D6C7FAF000B825C /* MOAMapIconMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MOAMapIconMenu.png; path = "Graphical Resources/Map icons/MOAMapIconMenu.png"; sourceTree = "<group>"; };
+		52D107751D6C7FAF000B825C /* MOAMapIconSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MOAMapIconSearch.png; path = "Graphical Resources/Map icons/MOAMapIconSearch.png"; sourceTree = "<group>"; };
+		52D107761D6C7FAF000B825C /* MOAMapIconStreetView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MOAMapIconStreetView.png; path = "Graphical Resources/Map icons/MOAMapIconStreetView.png"; sourceTree = "<group>"; };
+		52D1077D1D6C8016000B825C /* MOAGoogleMapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAGoogleMapsViewController.h; path = "View Controllers/MOAGoogleMapsViewController.h"; sourceTree = "<group>"; };
+		52D1077E1D6C8016000B825C /* MOAGoogleMapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAGoogleMapsViewController.m; path = "View Controllers/MOAGoogleMapsViewController.m"; sourceTree = "<group>"; };
+		52D1077F1D6C8016000B825C /* MOAMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAMenuTableViewController.h; path = "View Controllers/MOAMenuTableViewController.h"; sourceTree = "<group>"; };
+		52D107801D6C8016000B825C /* MOAMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAMenuTableViewController.m; path = "View Controllers/MOAMenuTableViewController.m"; sourceTree = "<group>"; };
+		52D107841D6C806A000B825C /* MOAMenuTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAMenuTableCellView.m; path = Views/YYGoogleMaps/MOAMenuTableCellView.m; sourceTree = "<group>"; };
+		52D107851D6C806A000B825C /* MOAMarkerInfoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAMarkerInfoWindow.h; path = Views/YYGoogleMaps/MOAMarkerInfoWindow.h; sourceTree = "<group>"; };
+		52D107861D6C806A000B825C /* MOAMarkerInfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAMarkerInfoWindow.m; path = Views/YYGoogleMaps/MOAMarkerInfoWindow.m; sourceTree = "<group>"; };
+		52D107871D6C806A000B825C /* MOAMenuTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAMenuTableCellView.h; path = Views/YYGoogleMaps/MOAMenuTableCellView.h; sourceTree = "<group>"; };
+		52D107881D6C806A000B825C /* MOAMenuTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MOAMenuTableCellView.xib; path = Views/YYGoogleMaps/MOAMenuTableCellView.xib; sourceTree = "<group>"; };
+		52D1078C1D6C807F000B825C /* MOAMarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MOAMarkerInfoView.xib; path = Views/YYGoogleMaps/MOAMarkerInfoView.xib; sourceTree = "<group>"; };
+		52D1078E1D6C80A7000B825C /* MOAServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAServerManager.h; path = "Network Managers/MOAServerManager.h"; sourceTree = "<group>"; };
+		52D1078F1D6C80A7000B825C /* MOAServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAServerManager.m; path = "Network Managers/MOAServerManager.m"; sourceTree = "<group>"; };
+		52D107931D6C8733000B825C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		52E69C081D6C433900710F81 /* MOADownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOADownloadManager.h; path = "Network Managers/MOADownloadManager.h"; sourceTree = "<group>"; };
+		52E69C091D6C433900710F81 /* MOADownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOADownloadManager.m; path = "Network Managers/MOADownloadManager.m"; sourceTree = "<group>"; };
+		52E69C0C1D6C438800710F81 /* MOAFilm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAFilm.h; path = Model/MOAFilm.h; sourceTree = "<group>"; };
+		52E69C0D1D6C438800710F81 /* MOAFilm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAFilm.m; path = Model/MOAFilm.m; sourceTree = "<group>"; };
+		52E69C0E1D6C438800710F81 /* MOATrailer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOATrailer.h; path = Model/MOATrailer.h; sourceTree = "<group>"; };
+		52E69C0F1D6C438800710F81 /* MOATrailer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOATrailer.m; path = Model/MOATrailer.m; sourceTree = "<group>"; };
+		52E69C121D6C43E000710F81 /* MOAInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAInitialViewController.h; path = "View Controllers/MOAInitialViewController.h"; sourceTree = "<group>"; };
+		52E69C131D6C43E000710F81 /* MOAInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAInitialViewController.m; path = "View Controllers/MOAInitialViewController.m"; sourceTree = "<group>"; };
+		52E69C181D6C440800710F81 /* MOAMovieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAMovieManager.h; path = Model/MOAMovieManager.h; sourceTree = "<group>"; };
+		52E69C191D6C440800710F81 /* MOAMovieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAMovieManager.m; path = Model/MOAMovieManager.m; sourceTree = "<group>"; };
+		84072E021D893AFA00D18E58 /* MOAGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAGradient.h; sourceTree = "<group>"; };
+		84072E031D893AFA00D18E58 /* MOAGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOAGradient.m; sourceTree = "<group>"; };
+		84072E1B1D895C5000D18E58 /* Movie.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Movie.xib; sourceTree = "<group>"; };
+		84072E201D8AD74100D18E58 /* MOACollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOACollectionsViewController.h; sourceTree = "<group>"; };
+		84072E211D8AD74100D18E58 /* MOACollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOACollectionsViewController.m; sourceTree = "<group>"; };
+		84F6EB4F1D75C16900AA3CF1 /* MOAMovieSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAMovieSearchController.h; path = "View Controllers/MOAMovieSearchController.h"; sourceTree = "<group>"; };
+		84F6EB501D75C16900AA3CF1 /* MOAMovieSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAMovieSearchController.m; path = "View Controllers/MOAMovieSearchController.m"; sourceTree = "<group>"; };
+		84F6EB531D75D6ED00AA3CF1 /* MOACollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MOACollectionViewCell.xib; sourceTree = "<group>"; };
+		84F6EB551D75D73600AA3CF1 /* MOAMovieCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAMovieCollectionViewCell.h; path = Views/MOAMovieCollectionView/MOAMovieCollectionViewCell.h; sourceTree = "<group>"; };
+		84F6EB561D75D73600AA3CF1 /* MOAMovieCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAMovieCollectionViewCell.m; path = Views/MOAMovieCollectionView/MOAMovieCollectionViewCell.m; sourceTree = "<group>"; };
+		84F6EB581D75F31300AA3CF1 /* MOASelectedMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOASelectedMovieViewController.h; sourceTree = "<group>"; };
+		84F6EB591D75F31300AA3CF1 /* MOASelectedMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOASelectedMovieViewController.m; sourceTree = "<group>"; };
+		84F6EB5B1D75FE3D00AA3CF1 /* MOAGenres.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAGenres.h; path = Model/MOAGenres.h; sourceTree = "<group>"; };
+		84F6EB5C1D75FE3D00AA3CF1 /* MOAGenres.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAGenres.m; path = Model/MOAGenres.m; sourceTree = "<group>"; };
+		BF5B66D01D91567500549C52 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		BF5B66D11D91567500549C52 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		BFF539DF1D913F7D00088C87 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		BFF539E01D913F7D00088C87 /* button.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = button.ico; sourceTree = "<group>"; };
+		BFF539E11D913F7D00088C87 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		BFF539E21D913F7D00088C87 /* search.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = search.ico; sourceTree = "<group>"; };
+		BFF539E31D913F7D00088C87 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		522080E21D6B582400E798A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D107941D6C8733000B825C /* Social.framework in Frameworks */,
+				522081081D6B5AC400E798A4 /* QuartzCore.framework in Frameworks */,
+				58326DB92802EE1C250AE9E3 /* libPods-MovieAssistant.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		522080DC1D6B582400E798A4 = {
+			isa = PBXGroup;
+			children = (
+				522080E71D6B582400E798A4 /* MovieAssistant */,
+				522080E61D6B582400E798A4 /* Products */,
+				EB19111195086299778785DE /* Pods */,
+				5DB24993FDDB76CFB1D76C4C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		522080E61D6B582400E798A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				522080E51D6B582400E798A4 /* MovieAssistant.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		522080E71D6B582400E798A4 /* MovieAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				522080FF1D6B585700E798A4 /* View Controllers */,
+				522081061D6B5AA900E798A4 /* Graphical resources */,
+				52E69C0B1D6C435500710F81 /* Model */,
+				52CA65DC1D744AE6002D72E1 /* Consts */,
+				522081001D6B587100E798A4 /* Network Managers */,
+				52D107651D6C447B000B825C /* Views */,
+				522080EB1D6B582400E798A4 /* AppDelegate.h */,
+				522080EC1D6B582400E798A4 /* AppDelegate.m */,
+				84072E1B1D895C5000D18E58 /* Movie.xib */,
+				522080F11D6B582400E798A4 /* Main.storyboard */,
+				522080F41D6B582400E798A4 /* Assets.xcassets */,
+				522080F61D6B582400E798A4 /* LaunchScreen.storyboard */,
+				522080F91D6B582400E798A4 /* Info.plist */,
+				522080E81D6B582400E798A4 /* Supporting Files */,
+			);
+			path = MovieAssistant;
+			sourceTree = "<group>";
+		};
+		522080E81D6B582400E798A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				522080E91D6B582400E798A4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		522080FF1D6B585700E798A4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				52E69C121D6C43E000710F81 /* MOAInitialViewController.h */,
+				52E69C131D6C43E000710F81 /* MOAInitialViewController.m */,
+				84F6EB4F1D75C16900AA3CF1 /* MOAMovieSearchController.h */,
+				84F6EB501D75C16900AA3CF1 /* MOAMovieSearchController.m */,
+				52D1077D1D6C8016000B825C /* MOAGoogleMapsViewController.h */,
+				52D1077E1D6C8016000B825C /* MOAGoogleMapsViewController.m */,
+				52D1076D1D6C7F65000B825C /* MOASearchTableViewController.h */,
+				52D1076E1D6C7F65000B825C /* MOASearchTableViewController.m */,
+				52D1077F1D6C8016000B825C /* MOAMenuTableViewController.h */,
+				52D107801D6C8016000B825C /* MOAMenuTableViewController.m */,
+				84F6EB581D75F31300AA3CF1 /* MOASelectedMovieViewController.h */,
+				84F6EB591D75F31300AA3CF1 /* MOASelectedMovieViewController.m */,
+				84072E021D893AFA00D18E58 /* MOAGradient.h */,
+				84072E031D893AFA00D18E58 /* MOAGradient.m */,
+				84072E201D8AD74100D18E58 /* MOACollectionsViewController.h */,
+				84072E211D8AD74100D18E58 /* MOACollectionsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		522081001D6B587100E798A4 /* Network Managers */ = {
+			isa = PBXGroup;
+			children = (
+				52D1078E1D6C80A7000B825C /* MOAServerManager.h */,
+				52D1078F1D6C80A7000B825C /* MOAServerManager.m */,
+				52E69C081D6C433900710F81 /* MOADownloadManager.h */,
+				52E69C091D6C433900710F81 /* MOADownloadManager.m */,
+			);
+			name = "Network Managers";
+			sourceTree = "<group>";
+		};
+		522081061D6B5AA900E798A4 /* Graphical resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF5B66D01D91567500549C52 /* back.png */,
+				BF5B66D11D91567500549C52 /* home.png */,
+				BFF539DF1D913F7D00088C87 /* bg.jpg */,
+				BFF539E01D913F7D00088C87 /* button.ico */,
+				BFF539E11D913F7D00088C87 /* map.png */,
+				BFF539E21D913F7D00088C87 /* search.ico */,
+				BFF539E31D913F7D00088C87 /* share.png */,
+				52D107701D6C7F84000B825C /* Map icons */,
+			);
+			name = "Graphical resources";
+			sourceTree = "<group>";
+		};
+		52CA65DC1D744AE6002D72E1 /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				52CA65DD1D744B23002D72E1 /* MOAConsts.h */,
+				52CA65DE1D744B23002D72E1 /* MOAConsts.m */,
+			);
+			name = Consts;
+			sourceTree = "<group>";
+		};
+		52D107651D6C447B000B825C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84F6EB521D75D68700AA3CF1 /* MOAMovieCollectionView */,
+				52D107661D6C44A2000B825C /* iCarousel */,
+				52D107831D6C805C000B825C /* MOAGoogleMaps */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		52D107661D6C44A2000B825C /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				52D107671D6C44B0000B825C /* iCarousel.h */,
+				52D107681D6C44B0000B825C /* iCarousel.m */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
+		52D107701D6C7F84000B825C /* Map icons */ = {
+			isa = PBXGroup;
+			children = (
+				52D107711D6C7FAF000B825C /* MOAMapIconBack.png */,
+				52D107721D6C7FAF000B825C /* MOAMapIconCut.png */,
+				52D107731D6C7FAF000B825C /* MOAMapIconDirections.png */,
+				52D107741D6C7FAF000B825C /* MOAMapIconMenu.png */,
+				52D107751D6C7FAF000B825C /* MOAMapIconSearch.png */,
+				52D107761D6C7FAF000B825C /* MOAMapIconStreetView.png */,
+			);
+			name = "Map icons";
+			sourceTree = "<group>";
+		};
+		52D107831D6C805C000B825C /* MOAGoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				52D107921D6C80C3000B825C /* MOAGoogleMaps MenuTableCell */,
+				52D107911D6C80AC000B825C /* MOAGoogleMaps Marker */,
+			);
+			name = MOAGoogleMaps;
+			sourceTree = "<group>";
+		};
+		52D107911D6C80AC000B825C /* MOAGoogleMaps Marker */ = {
+			isa = PBXGroup;
+			children = (
+				52D107851D6C806A000B825C /* MOAMarkerInfoWindow.h */,
+				52D107861D6C806A000B825C /* MOAMarkerInfoWindow.m */,
+				52D1078C1D6C807F000B825C /* MOAMarkerInfoView.xib */,
+			);
+			name = "MOAGoogleMaps Marker";
+			sourceTree = "<group>";
+		};
+		52D107921D6C80C3000B825C /* MOAGoogleMaps MenuTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				52D107871D6C806A000B825C /* MOAMenuTableCellView.h */,
+				52D107841D6C806A000B825C /* MOAMenuTableCellView.m */,
+				52D107881D6C806A000B825C /* MOAMenuTableCellView.xib */,
+			);
+			name = "MOAGoogleMaps MenuTableCell";
+			sourceTree = "<group>";
+		};
+		52E69C0B1D6C435500710F81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52E69C181D6C440800710F81 /* MOAMovieManager.h */,
+				52E69C191D6C440800710F81 /* MOAMovieManager.m */,
+				52E69C0C1D6C438800710F81 /* MOAFilm.h */,
+				52E69C0D1D6C438800710F81 /* MOAFilm.m */,
+				52E69C0E1D6C438800710F81 /* MOATrailer.h */,
+				52E69C0F1D6C438800710F81 /* MOATrailer.m */,
+				84F6EB5B1D75FE3D00AA3CF1 /* MOAGenres.h */,
+				84F6EB5C1D75FE3D00AA3CF1 /* MOAGenres.m */,
+				BF932D4B1D6C8DCE008506E8 /* MOADataManager */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5DB24993FDDB76CFB1D76C4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				522081071D6B5AC400E798A4 /* QuartzCore.framework */,
+				52D107931D6C8733000B825C /* Social.framework */,
+				229B5317178FAD1C432ED70D /* libPods-MovieAssistant.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F6EB521D75D68700AA3CF1 /* MOAMovieCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				84F6EB531D75D6ED00AA3CF1 /* MOACollectionViewCell.xib */,
+				84F6EB551D75D73600AA3CF1 /* MOAMovieCollectionViewCell.h */,
+				84F6EB561D75D73600AA3CF1 /* MOAMovieCollectionViewCell.m */,
+			);
+			name = MOAMovieCollectionView;
+			sourceTree = "<group>";
+		};
+		BF932D4B1D6C8DCE008506E8 /* MOADataManager */ = {
+			isa = PBXGroup;
+			children = (
+				52CAA8B71D76D4970083A981 /* SHADataFavorite.h */,
+				52CAA8B81D76D4970083A981 /* SHADataFavorite.m */,
+				52CAA8B91D76D4970083A981 /* SHADataFavoriteList.plist */,
+				52CAA8B41D76D4970083A981 /* SHADataComingSoon.h */,
+				52CAA8B51D76D4970083A981 /* SHADataComingSoon.m */,
+				52CAA8B61D76D4970083A981 /* SHADataComingSoonList.plist */,
+				52CAA8BA1D76D4970083A981 /* SHASearchDataHistory.h */,
+				52CAA8BB1D76D4970083A981 /* SHASearchDataHistory.m */,
+				52CAA8BC1D76D4970083A981 /* SHASearchDataHistoryList.plist */,
+			);
+			name = MOADataManager;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EB19111195086299778785DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F85232D35AE351A03749844 /* Pods-MovieAssistant.debug.xcconfig */,
+				2ED6465D2260062AFF662C50 /* Pods-MovieAssistant.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		522080E41D6B582400E798A4 /* MovieAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 522080FC1D6B582400E798A4 /* Build configuration list for PBXNativeTarget "MovieAssistant" */;
+			buildPhases = (
+				8BD8A69507F9A6FAEC6F505D /* [CP] Check Pods Manifest.lock */,
+				522080E11D6B582400E798A4 /* Sources */,
+				522080E21D6B582400E798A4 /* Frameworks */,
+				522080E31D6B582400E798A4 /* Resources */,
+				AB7AEB0ECF14C57463C94713 /* [CP] Embed Pods Frameworks */,
+				05E44884FAC10749E509398A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieAssistant;
+			productName = MovieAssistant;
+			productReference = 522080E51D6B582400E798A4 /* MovieAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		522080DD1D6B582400E798A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MOA;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = lv189.ios;
+				TargetAttributes = {
+					522080E41D6B582400E798A4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = M7LFA46QZA;
+					};
+				};
+			};
+			buildConfigurationList = 522080E01D6B582400E798A4 /* Build configuration list for PBXProject "MovieAssistant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 522080DC1D6B582400E798A4;
+			productRefGroup = 522080E61D6B582400E798A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				522080E41D6B582400E798A4 /* MovieAssistant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		522080E31D6B582400E798A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D1077B1D6C7FAF000B825C /* MOAMapIconSearch.png in Resources */,
+				52D107791D6C7FAF000B825C /* MOAMapIconDirections.png in Resources */,
+				522080F81D6B582400E798A4 /* LaunchScreen.storyboard in Resources */,
+				52D1077C1D6C7FAF000B825C /* MOAMapIconStreetView.png in Resources */,
+				52D1078B1D6C806A000B825C /* MOAMenuTableCellView.xib in Resources */,
+				BFF539E71D913F7D00088C87 /* search.ico in Resources */,
+				52CAA8C01D76D4970083A981 /* SHADataFavoriteList.plist in Resources */,
+				84072E1C1D895C5000D18E58 /* Movie.xib in Resources */,
+				52D1078D1D6C807F000B825C /* MOAMarkerInfoView.xib in Resources */,
+				52D107781D6C7FAF000B825C /* MOAMapIconCut.png in Resources */,
+				BFF539E81D913F7D00088C87 /* share.png in Resources */,
+				BFF539E61D913F7D00088C87 /* map.png in Resources */,
+				52D1077A1D6C7FAF000B825C /* MOAMapIconMenu.png in Resources */,
+				84F6EB541D75D6ED00AA3CF1 /* MOACollectionViewCell.xib in Resources */,
+				52D107771D6C7FAF000B825C /* MOAMapIconBack.png in Resources */,
+				52CAA8C21D76D4970083A981 /* SHASearchDataHistoryList.plist in Resources */,
+				BFF539E51D913F7D00088C87 /* button.ico in Resources */,
+				BFF539E41D913F7D00088C87 /* bg.jpg in Resources */,
+				BF5B66D21D91567500549C52 /* back.png in Resources */,
+				BF5B66D31D91567500549C52 /* home.png in Resources */,
+				522080F51D6B582400E798A4 /* Assets.xcassets in Resources */,
+				522080F31D6B582400E798A4 /* Main.storyboard in Resources */,
+				52CAA8BE1D76D4970083A981 /* SHADataComingSoonList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05E44884FAC10749E509398A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieAssistant/Pods-MovieAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BD8A69507F9A6FAEC6F505D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB7AEB0ECF14C57463C94713 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieAssistant/Pods-MovieAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		522080E11D6B582400E798A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D107891D6C806A000B825C /* MOAMenuTableCellView.m in Sources */,
+				52D107901D6C80A7000B825C /* MOAServerManager.m in Sources */,
+				52E69C0A1D6C433900710F81 /* MOADownloadManager.m in Sources */,
+				84F6EB571D75D73600AA3CF1 /* MOAMovieCollectionViewCell.m in Sources */,
+				522080ED1D6B582400E798A4 /* AppDelegate.m in Sources */,
+				52D1078A1D6C806A000B825C /* MOAMarkerInfoWindow.m in Sources */,
+				52D1076F1D6C7F65000B825C /* MOASearchTableViewController.m in Sources */,
+				52CA65DF1D744B23002D72E1 /* MOAConsts.m in Sources */,
+				84072E041D893AFA00D18E58 /* MOAGradient.m in Sources */,
+				52D107691D6C44B0000B825C /* iCarousel.m in Sources */,
+				52D107811D6C8016000B825C /* MOAGoogleMapsViewController.m in Sources */,
+				84F6EB511D75C16900AA3CF1 /* MOAMovieSearchController.m in Sources */,
+				52E69C141D6C43E000710F81 /* MOAInitialViewController.m in Sources */,
+				52CAA8BD1D76D4970083A981 /* SHADataComingSoon.m in Sources */,
+				52E69C1A1D6C440800710F81 /* MOAMovieManager.m in Sources */,
+				52D107821D6C8016000B825C /* MOAMenuTableViewController.m in Sources */,
+				84072E221D8AD74100D18E58 /* MOACollectionsViewController.m in Sources */,
+				52CAA8C11D76D4970083A981 /* SHASearchDataHistory.m in Sources */,
+				52E69C101D6C438800710F81 /* MOAFilm.m in Sources */,
+				84F6EB5A1D75F31300AA3CF1 /* MOASelectedMovieViewController.m in Sources */,
+				52E69C111D6C438800710F81 /* MOATrailer.m in Sources */,
+				52CAA8BF1D76D4970083A981 /* SHADataFavorite.m in Sources */,
+				84F6EB5D1D75FE3D00AA3CF1 /* MOAGenres.m in Sources */,
+				522080EA1D6B582400E798A4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		522080F11D6B582400E798A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				522080F21D6B582400E798A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		522080F61D6B582400E798A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				522080F71D6B582400E798A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		522080FA1D6B582400E798A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		522080FB1D6B582400E798A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		522080FD1D6B582400E798A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F85232D35AE351A03749844 /* Pods-MovieAssistant.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MovieAssistant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lv189.ios.MovieAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		522080FE1D6B582400E798A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED6465D2260062AFF662C50 /* Pods-MovieAssistant.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MovieAssistant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lv189.ios.MovieAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		522080E01D6B582400E798A4 /* Build configuration list for PBXProject "MovieAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522080FA1D6B582400E798A4 /* Debug */,
+				522080FB1D6B582400E798A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		522080FC1D6B582400E798A4 /* Build configuration list for PBXNativeTarget "MovieAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522080FD1D6B582400E798A4 /* Debug */,
+				522080FE1D6B582400E798A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 522080DD1D6B582400E798A4 /* Project object */;
+}
