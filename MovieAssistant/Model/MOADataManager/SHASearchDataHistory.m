@@ -106,7 +106,7 @@ static BOOL didFirstSave;
     NSMutableDictionary *readHistoryDataDict = [NSMutableDictionary dictionaryWithContentsOfFile:dataSearchFilePath];
     NSMutableDictionary *historyDict = [NSMutableDictionary dictionaryWithDictionary:[readHistoryDataDict objectForKey:titleString]];
     NSMutableDictionary *historyCurrentFilmDict = [NSMutableDictionary dictionaryWithDictionary:[historyDict objectForKey:titleString]];
-    NSLog(@"ret %@",historyCurrentFilmDict);
+//    NSLog(@"ret %@",historyCurrentFilmDict);
     return historyCurrentFilmDict;
 }
 

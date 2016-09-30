@@ -24,6 +24,9 @@ PODS:
     - GooglePlaces (= 2.0.0)
   - GooglePlaces (2.0.0):
     - GoogleMaps/Base (= 2.0.0)
+  - Realm (0.96.2):
+    - Realm/Headers (= 0.96.2)
+  - Realm/Headers (0.96.2)
   - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
@@ -31,6 +34,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
+  - Realm (= 0.96.2)
   - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
@@ -38,8 +42,7 @@ SPEC CHECKSUMS:
   GoogleMaps: ed04212f95710a19639fd9950ef97b897e4391de
   GooglePlacePicker: 98ab548cedda3a7acb8efde486d1c2bcd316007e
   GooglePlaces: e3bd7cf10fb691ad3f40f03e467fd807e1940e9c
+  Realm: 3ce8448151c571e90b85002d984d7f93f54fc8a3
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: b6707b7f33e58c67c2b46847507d5501f8942cdf
-
-COCOAPODS: 1.0.1
+COCOAPODS: 0.39.0

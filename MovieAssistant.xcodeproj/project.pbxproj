@@ -45,6 +45,9 @@
 		84072E041D893AFA00D18E58 /* MOAGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84072E031D893AFA00D18E58 /* MOAGradient.m */; };
 		84072E1C1D895C5000D18E58 /* Movie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84072E1B1D895C5000D18E58 /* Movie.xib */; };
 		84072E221D8AD74100D18E58 /* MOACollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84072E211D8AD74100D18E58 /* MOACollectionsViewController.m */; };
+		84726FA81D92EFC200EBDF51 /* rated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84726FA71D92EFC200EBDF51 /* rated.jpg */; };
+		84726FAA1D92F21700EBDF51 /* watch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84726FA91D92F21700EBDF51 /* watch.jpg */; };
+		8487552B1D92F71E0054997B /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8487552A1D92F71E0054997B /* 0.jpg */; };
 		84F6EB511D75C16900AA3CF1 /* MOAMovieSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EB501D75C16900AA3CF1 /* MOAMovieSearchController.m */; };
 		84F6EB541D75D6ED00AA3CF1 /* MOACollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F6EB531D75D6ED00AA3CF1 /* MOACollectionViewCell.xib */; };
 		84F6EB571D75D73600AA3CF1 /* MOAMovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EB561D75D73600AA3CF1 /* MOAMovieCollectionViewCell.m */; };
@@ -52,11 +55,17 @@
 		84F6EB5D1D75FE3D00AA3CF1 /* MOAGenres.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6EB5C1D75FE3D00AA3CF1 /* MOAGenres.m */; };
 		BF5B66D21D91567500549C52 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5B66D01D91567500549C52 /* back.png */; };
 		BF5B66D31D91567500549C52 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5B66D11D91567500549C52 /* home.png */; };
-		BFF539E41D913F7D00088C87 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF539DF1D913F7D00088C87 /* bg.jpg */; };
+		BF7CD9A41D929DB20078FC65 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF7CD9A31D929DB20078FC65 /* bg.jpg */; };
+		BFBCC4581D930C8F000C2146 /* MOAWatchLaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBCC4571D930C8F000C2146 /* MOAWatchLaterViewController.m */; };
+		BFBDE98B1D92FB1C003FFDE2 /* popular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFBDE98A1D92FB1C003FFDE2 /* popular.jpg */; };
+		BFBDE98E1D92FC06003FFDE2 /* SHADataRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBDE98D1D92FC06003FFDE2 /* SHADataRealm.m */; };
+		BFBDE9931D9307A3003FFDE2 /* AIMovieDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBDE9901D9307A3003FFDE2 /* AIMovieDownloader.m */; };
+		BFBDE9941D9307A3003FFDE2 /* AIMovieParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBDE9921D9307A3003FFDE2 /* AIMovieParser.m */; };
 		BFF539E51D913F7D00088C87 /* button.ico in Resources */ = {isa = PBXBuildFile; fileRef = BFF539E01D913F7D00088C87 /* button.ico */; };
 		BFF539E61D913F7D00088C87 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF539E11D913F7D00088C87 /* map.png */; };
 		BFF539E71D913F7D00088C87 /* search.ico in Resources */ = {isa = PBXBuildFile; fileRef = BFF539E21D913F7D00088C87 /* search.ico */; };
 		BFF539E81D913F7D00088C87 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF539E31D913F7D00088C87 /* share.png */; };
+		BFF7C0151D93BC6C00173F31 /* fav.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF7C0141D93BC6C00173F31 /* fav.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +130,9 @@
 		84072E1B1D895C5000D18E58 /* Movie.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Movie.xib; sourceTree = "<group>"; };
 		84072E201D8AD74100D18E58 /* MOACollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOACollectionsViewController.h; sourceTree = "<group>"; };
 		84072E211D8AD74100D18E58 /* MOACollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOACollectionsViewController.m; sourceTree = "<group>"; };
+		84726FA71D92EFC200EBDF51 /* rated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rated.jpg; sourceTree = "<group>"; };
+		84726FA91D92F21700EBDF51 /* watch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = watch.jpg; sourceTree = "<group>"; };
+		8487552A1D92F71E0054997B /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		84F6EB4F1D75C16900AA3CF1 /* MOAMovieSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAMovieSearchController.h; path = "View Controllers/MOAMovieSearchController.h"; sourceTree = "<group>"; };
 		84F6EB501D75C16900AA3CF1 /* MOAMovieSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAMovieSearchController.m; path = "View Controllers/MOAMovieSearchController.m"; sourceTree = "<group>"; };
 		84F6EB531D75D6ED00AA3CF1 /* MOACollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MOACollectionViewCell.xib; sourceTree = "<group>"; };
@@ -132,11 +144,21 @@
 		84F6EB5C1D75FE3D00AA3CF1 /* MOAGenres.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAGenres.m; path = Model/MOAGenres.m; sourceTree = "<group>"; };
 		BF5B66D01D91567500549C52 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		BF5B66D11D91567500549C52 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
-		BFF539DF1D913F7D00088C87 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		BF7CD9A31D929DB20078FC65 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		BFBCC4561D930C8F000C2146 /* MOAWatchLaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAWatchLaterViewController.h; sourceTree = "<group>"; };
+		BFBCC4571D930C8F000C2146 /* MOAWatchLaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOAWatchLaterViewController.m; sourceTree = "<group>"; };
+		BFBDE98A1D92FB1C003FFDE2 /* popular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popular.jpg; sourceTree = "<group>"; };
+		BFBDE98C1D92FC06003FFDE2 /* SHADataRealm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHADataRealm.h; sourceTree = "<group>"; };
+		BFBDE98D1D92FC06003FFDE2 /* SHADataRealm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHADataRealm.m; sourceTree = "<group>"; };
+		BFBDE98F1D9307A3003FFDE2 /* AIMovieDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMovieDownloader.h; sourceTree = "<group>"; };
+		BFBDE9901D9307A3003FFDE2 /* AIMovieDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIMovieDownloader.m; sourceTree = "<group>"; };
+		BFBDE9911D9307A3003FFDE2 /* AIMovieParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMovieParser.h; sourceTree = "<group>"; };
+		BFBDE9921D9307A3003FFDE2 /* AIMovieParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIMovieParser.m; sourceTree = "<group>"; };
 		BFF539E01D913F7D00088C87 /* button.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = button.ico; sourceTree = "<group>"; };
 		BFF539E11D913F7D00088C87 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		BFF539E21D913F7D00088C87 /* search.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = search.ico; sourceTree = "<group>"; };
 		BFF539E31D913F7D00088C87 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		BFF7C0141D93BC6C00173F31 /* fav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fav.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +225,7 @@
 		522080FF1D6B585700E798A4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BF932D4B1D6C8DCE008506E8 /* MOADataManager */,
 				52E69C121D6C43E000710F81 /* MOAInitialViewController.h */,
 				52E69C131D6C43E000710F81 /* MOAInitialViewController.m */,
 				84F6EB4F1D75C16900AA3CF1 /* MOAMovieSearchController.h */,
@@ -237,9 +260,14 @@
 		522081061D6B5AA900E798A4 /* Graphical resources */ = {
 			isa = PBXGroup;
 			children = (
+				BFF7C0141D93BC6C00173F31 /* fav.png */,
+				BFBDE98A1D92FB1C003FFDE2 /* popular.jpg */,
+				8487552A1D92F71E0054997B /* 0.jpg */,
+				BF7CD9A31D929DB20078FC65 /* bg.jpg */,
 				BF5B66D01D91567500549C52 /* back.png */,
+				84726FA91D92F21700EBDF51 /* watch.jpg */,
+				84726FA71D92EFC200EBDF51 /* rated.jpg */,
 				BF5B66D11D91567500549C52 /* home.png */,
-				BFF539DF1D913F7D00088C87 /* bg.jpg */,
 				BFF539E01D913F7D00088C87 /* button.ico */,
 				BFF539E11D913F7D00088C87 /* map.png */,
 				BFF539E21D913F7D00088C87 /* search.ico */,
@@ -330,7 +358,6 @@
 				52E69C0F1D6C438800710F81 /* MOATrailer.m */,
 				84F6EB5B1D75FE3D00AA3CF1 /* MOAGenres.h */,
 				84F6EB5C1D75FE3D00AA3CF1 /* MOAGenres.m */,
-				BF932D4B1D6C8DCE008506E8 /* MOADataManager */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -358,6 +385,14 @@
 		BF932D4B1D6C8DCE008506E8 /* MOADataManager */ = {
 			isa = PBXGroup;
 			children = (
+				BFBDE9911D9307A3003FFDE2 /* AIMovieParser.h */,
+				BFBDE9921D9307A3003FFDE2 /* AIMovieParser.m */,
+				BFBDE98F1D9307A3003FFDE2 /* AIMovieDownloader.h */,
+				BFBDE9901D9307A3003FFDE2 /* AIMovieDownloader.m */,
+				BFBDE98C1D92FC06003FFDE2 /* SHADataRealm.h */,
+				BFBDE98D1D92FC06003FFDE2 /* SHADataRealm.m */,
+				BFBCC4561D930C8F000C2146 /* MOAWatchLaterViewController.h */,
+				BFBCC4571D930C8F000C2146 /* MOAWatchLaterViewController.m */,
 				52CAA8B71D76D4970083A981 /* SHADataFavorite.h */,
 				52CAA8B81D76D4970083A981 /* SHADataFavorite.m */,
 				52CAA8B91D76D4970083A981 /* SHADataFavoriteList.plist */,
@@ -394,6 +429,7 @@
 				522080E31D6B582400E798A4 /* Resources */,
 				AB7AEB0ECF14C57463C94713 /* [CP] Embed Pods Frameworks */,
 				05E44884FAC10749E509398A /* [CP] Copy Pods Resources */,
+				4A32A24C0FA26D466FEFC7B4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -445,22 +481,27 @@
 			files = (
 				52D1077B1D6C7FAF000B825C /* MOAMapIconSearch.png in Resources */,
 				52D107791D6C7FAF000B825C /* MOAMapIconDirections.png in Resources */,
+				84726FAA1D92F21700EBDF51 /* watch.jpg in Resources */,
 				522080F81D6B582400E798A4 /* LaunchScreen.storyboard in Resources */,
 				52D1077C1D6C7FAF000B825C /* MOAMapIconStreetView.png in Resources */,
+				84726FA81D92EFC200EBDF51 /* rated.jpg in Resources */,
 				52D1078B1D6C806A000B825C /* MOAMenuTableCellView.xib in Resources */,
+				BF7CD9A41D929DB20078FC65 /* bg.jpg in Resources */,
 				BFF539E71D913F7D00088C87 /* search.ico in Resources */,
 				52CAA8C01D76D4970083A981 /* SHADataFavoriteList.plist in Resources */,
 				84072E1C1D895C5000D18E58 /* Movie.xib in Resources */,
 				52D1078D1D6C807F000B825C /* MOAMarkerInfoView.xib in Resources */,
 				52D107781D6C7FAF000B825C /* MOAMapIconCut.png in Resources */,
+				BFBDE98B1D92FB1C003FFDE2 /* popular.jpg in Resources */,
 				BFF539E81D913F7D00088C87 /* share.png in Resources */,
 				BFF539E61D913F7D00088C87 /* map.png in Resources */,
 				52D1077A1D6C7FAF000B825C /* MOAMapIconMenu.png in Resources */,
 				84F6EB541D75D6ED00AA3CF1 /* MOACollectionViewCell.xib in Resources */,
+				8487552B1D92F71E0054997B /* 0.jpg in Resources */,
+				BFF7C0151D93BC6C00173F31 /* fav.png in Resources */,
 				52D107771D6C7FAF000B825C /* MOAMapIconBack.png in Resources */,
 				52CAA8C21D76D4970083A981 /* SHASearchDataHistoryList.plist in Resources */,
 				BFF539E51D913F7D00088C87 /* button.ico in Resources */,
-				BFF539E41D913F7D00088C87 /* bg.jpg in Resources */,
 				BF5B66D21D91567500549C52 /* back.png in Resources */,
 				BF5B66D31D91567500549C52 /* home.png in Resources */,
 				522080F51D6B582400E798A4 /* Assets.xcassets in Resources */,
@@ -485,6 +526,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieAssistant/Pods-MovieAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A32A24C0FA26D466FEFC7B4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieAssistant/Pods-MovieAssistant-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8BD8A69507F9A6FAEC6F505D /* [CP] Check Pods Manifest.lock */ = {
@@ -531,6 +587,7 @@
 				522080ED1D6B582400E798A4 /* AppDelegate.m in Sources */,
 				52D1078A1D6C806A000B825C /* MOAMarkerInfoWindow.m in Sources */,
 				52D1076F1D6C7F65000B825C /* MOASearchTableViewController.m in Sources */,
+				BFBDE9931D9307A3003FFDE2 /* AIMovieDownloader.m in Sources */,
 				52CA65DF1D744B23002D72E1 /* MOAConsts.m in Sources */,
 				84072E041D893AFA00D18E58 /* MOAGradient.m in Sources */,
 				52D107691D6C44B0000B825C /* iCarousel.m in Sources */,
@@ -540,7 +597,9 @@
 				52CAA8BD1D76D4970083A981 /* SHADataComingSoon.m in Sources */,
 				52E69C1A1D6C440800710F81 /* MOAMovieManager.m in Sources */,
 				52D107821D6C8016000B825C /* MOAMenuTableViewController.m in Sources */,
+				BFBDE98E1D92FC06003FFDE2 /* SHADataRealm.m in Sources */,
 				84072E221D8AD74100D18E58 /* MOACollectionsViewController.m in Sources */,
+				BFBCC4581D930C8F000C2146 /* MOAWatchLaterViewController.m in Sources */,
 				52CAA8C11D76D4970083A981 /* SHASearchDataHistory.m in Sources */,
 				52E69C101D6C438800710F81 /* MOAFilm.m in Sources */,
 				84F6EB5A1D75F31300AA3CF1 /* MOASelectedMovieViewController.m in Sources */,
@@ -548,6 +607,7 @@
 				52CAA8BF1D76D4970083A981 /* SHADataFavorite.m in Sources */,
 				84F6EB5D1D75FE3D00AA3CF1 /* MOAGenres.m in Sources */,
 				522080EA1D6B582400E798A4 /* main.m in Sources */,
+				BFBDE9941D9307A3003FFDE2 /* AIMovieParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

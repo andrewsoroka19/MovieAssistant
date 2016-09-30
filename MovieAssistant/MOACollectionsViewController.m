@@ -23,6 +23,7 @@
 @property (copy, nonatomic) __block NSString* trailerLink;
 
 
+@property(strong, nonatomic) MOATrailer *selectedTrailer;
 
 
 @property(weak, nonatomic)
@@ -54,10 +55,10 @@ IBOutlet UICollectionView *foundedMoviesCollectionView;
     [self.foundedMoviesCollectionView setCollectionViewLayout:flowLayout];
     
     
- 
-
+    
+    
     [self provideData:self.dataFromInitial];
-
+    
 }
 
 #pragma mark - UICollectionView delegate
@@ -106,7 +107,11 @@ IBOutlet UICollectionView *foundedMoviesCollectionView;
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     self.selectedMovieIndex = indexPath.row;
-    [self performSegueWithIdentifier:@"segueToSelectedMovie" sender:self];
+    MOAMovieManager *currentManager = [self.collectionViewData objectAtIndex:self.selectedMovieIndex];
+    [MOADownloadManager fetchYoutubeTrailer:[currentManager.youTubeID1 stringValue]  completionHandler:^(MOATrailer *trailer) {
+        self.selectedTrailer = trailer;
+        [self performSegueWithIdentifier:@"segueToSelectedMovie" sender:self];
+    }];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -137,6 +142,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
         [vc setMovieTrailerString:[self.collectionViewData
                                    objectAtIndex:self.selectedMovieIndex]
          .movieYouTubeID];
+        vc.selectedTrailer = self.selectedTrailer;
     }
 }
 

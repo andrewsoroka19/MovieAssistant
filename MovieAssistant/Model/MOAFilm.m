@@ -7,6 +7,7 @@
 //
 
 #import "MOAFilm.h"
+#import "MOADownloadManager.h"
 
 @interface NSDateFormatter (ASFormatter)
 
@@ -18,13 +19,13 @@
 
 // For avoiding creating NSDateFormatter every time
 + (NSDateFormatter *)sharedFormatter {
-  static NSDateFormatter *_dateFormatter;
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    _dateFormatter = [[NSDateFormatter alloc] init];
-    [_dateFormatter setDateFormat:@"yyyy-MM-dd"];
-  });
-  return _dateFormatter;
+    static NSDateFormatter *_dateFormatter;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _dateFormatter = [[NSDateFormatter alloc] init];
+        [_dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    });
+    return _dateFormatter;
 }
 
 @end
@@ -36,18 +37,17 @@
 @property(strong, nonatomic) NSNumber *rating;
 @property(strong, nonatomic) NSDate *releaseDate;
 @property(strong, nonatomic) MOAGenres *genres;
-//@property (strong, nonatomic) NSNumber* youtubeId;
 
 @end
 
 @implementation MOAFilm
 
 + (MOAFilm *)initWithDictionary:(NSDictionary *)dictionary {
-  MOAFilm *film = [[MOAFilm alloc] init];
-  film.genres = [MOAGenres genreWithNumberArray:dictionary[@"genre_ids"]];
-  film.title = dictionary[@"title"];
-  film.rating = dictionary[@"vote_average"];
-  film.youtubeId = dictionary[@"id"];
+    MOAFilm *film = [[MOAFilm alloc] init];
+    film.genres = [MOAGenres genreWithNumberArray:dictionary[@"genre_ids"]];
+    film.title = dictionary[@"title"];
+    film.rating = dictionary[@"vote_average"];
+    film.youtubeId = dictionary[@"id"];
     
     NSString *currentDateString = dictionary[@"release_date"];
     NSDateFormatter *dateFormater = [[NSDateFormatter alloc] init];
@@ -63,21 +63,16 @@
     
     
     film.movieDescription = dictionary[@"overview"];
-
     
-//  NSString *dateString = dictionary[@"release_date"];
-//  film.releaseDate =
-//      [[NSDateFormatter sharedFormatter] dateFromString:dateString];
-
-  NSString *posterPath = dictionary[@"poster_path"];
-  NSString *posterURLstring = [[NSString
-      stringWithFormat:@"https://image.tmdb.org/t/p/original%@", posterPath]
-      stringByReplacingOccurrencesOfString:@" "
-                                withString:@"%20"];
-  film.posterPath = posterURLstring;
-
-
-  return film;
+    NSString *posterPath = dictionary[@"poster_path"];
+    NSString *posterURLstring = [[NSString
+                                  stringWithFormat:@"https://image.tmdb.org/t/p/original%@", posterPath]
+                                 stringByReplacingOccurrencesOfString:@" "
+                                 withString:@"%20"];
+    film.posterPath = posterURLstring;
+    
+    
+    return film;
 }
 
 

@@ -8,6 +8,7 @@
 
 #import "MOAGenres.h"
 #import <Foundation/Foundation.h>
+#import "MOATrailer.h"
 
 @interface MOAFilm : NSObject
 
@@ -20,10 +21,9 @@
 @property(strong, nonatomic, readonly) MOAGenres *genres;
 @property(strong, nonatomic) NSString *releaseDateString;
 @property(strong, nonatomic) NSString *movieDescription;
+@property(strong, nonatomic) MOATrailer *trailerID;
 
 
 + (MOAFilm *)initWithDictionary:(NSDictionary *)dictionary;
 
-//+ (OverViewManager *)trailerkey:(NSString *)key
-//                    andOverView:(NSString *)overview ;
 @end

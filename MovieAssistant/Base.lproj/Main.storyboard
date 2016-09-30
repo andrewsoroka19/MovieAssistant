@@ -141,49 +141,95 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dP6-J4-K1W">
-                                <rect key="frame" x="20" y="28" width="441" height="720"/>
+                                <rect key="frame" x="20" y="28" width="441" height="664"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDF-eZ-uBf">
-                                <rect key="frame" x="469" y="28" width="535" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sO5-gb-Oxf">
+                                <rect key="frame" x="563" y="91" width="409" height="21"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sO5-gb-Oxf">
-                                <rect key="frame" x="469" y="57" width="535" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="3" height="-1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-gw-VzU">
-                                <rect key="frame" x="469" y="86" width="535" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="563" y="120" width="453" height="21"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="3" height="-1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvv-c0-HGh">
-                                <rect key="frame" x="469" y="115" width="535" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="etm-px-5Sd">
-                                <rect key="frame" x="469" y="144" width="535" height="262"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="etm-px-5Sd">
+                                <rect key="frame" x="469" y="164" width="535" height="218"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEe-Ae-Rsw" customClass="YTPlayerView">
-                                <rect key="frame" x="527" y="444" width="418" height="230"/>
+                                <rect key="frame" x="469" y="390" width="535" height="302"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B22-QP-awf">
-                                <rect key="frame" x="897" y="688" width="127" height="80"/>
+                                <rect key="frame" x="890" y="691" width="114" height="72"/>
                                 <state key="normal" image="home.png"/>
                                 <connections>
                                     <segue destination="rCj-rz-Sem" kind="presentation" id="JHw-pH-leU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40p-9g-cb0">
+                                <rect key="frame" x="20" y="694" width="66" height="66"/>
+                                <state key="normal" title="Button" image="share.png"/>
+                                <connections>
+                                    <action selector="showSocialView:" destination="G3d-Mf-11W" eventType="touchUpInside" id="cse-YE-Q3V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJa-p1-cSP">
+                                <rect key="frame" x="474" y="91" width="77" height="21"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
+                                <color key="textColor" red="0.98619002529999999" green="0.97630130289999995" blue="0.11010544880000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXK-7a-at9">
+                                <rect key="frame" x="474" y="120" width="50" height="23"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
+                                <color key="textColor" red="0.98619002529999999" green="0.97630130289999995" blue="0.11010544880000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfE-UX-2gl">
+                                <rect key="frame" x="474" y="145" width="74" height="29"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <color key="textColor" red="0.98619002529999999" green="0.97630130289999995" blue="0.11010544880000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDF-eZ-uBf">
+                                <rect key="frame" x="469" y="20" width="547" height="57"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="3" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvv-c0-HGh">
+                                <rect key="frame" x="563" y="147" width="409" height="25"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="3" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSy-46-Vmk">
+                                <rect key="frame" x="467" y="692" width="91" height="69"/>
+                                <state key="normal" image="fav.png"/>
+                                <connections>
+                                    <action selector="addMovieToFavorite:" destination="G3d-Mf-11W" eventType="touchUpInside" id="gdb-QO-7fO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -198,12 +244,13 @@
                         <outlet property="movieRating" destination="Dvv-c0-HGh" id="wJZ-uM-gxC"/>
                         <outlet property="movieTitle" destination="lDF-eZ-uBf" id="gfv-vh-aOt"/>
                         <outlet property="movieYear" destination="U1n-gw-VzU" id="GHe-vD-heE"/>
+                        <outlet property="shareFilm" destination="40p-9g-cb0" id="JlW-0k-FO8"/>
                         <outlet property="trailerView" destination="hEe-Ae-Rsw" id="2tq-KX-X3M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHk-VP-lro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1933" y="1131"/>
+            <point key="canvasLocation" x="1953" y="1148"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="NO3-Wz-6es">
@@ -220,16 +267,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-TH-N8l">
                                 <rect key="frame" x="20" y="2" width="984" height="766"/>
                             </imageView>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUA-dl-e1x" customClass="iCarousel">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="499"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="rCj-rz-Sem" id="ukC-Bf-GLF"/>
-                                    <outlet property="delegate" destination="rCj-rz-Sem" id="6Gc-8i-hSl"/>
-                                </connections>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0U8-Mj-CCa">
-                                <rect key="frame" x="0.0" y="592" width="92" height="88"/>
+                                <rect key="frame" x="0.0" y="567" width="105" height="100"/>
                                 <color key="backgroundColor" red="0.26866706955596237" green="0.51173043478594105" blue="0.9861900252525253" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0U8-Mj-CCa" secondAttribute="height" multiplier="151:144" id="5ps-cK-bbU"/>
@@ -242,22 +281,24 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbP-ad-de6">
-                                <rect key="frame" x="0.0" y="681" width="92" height="87"/>
-                                <color key="backgroundColor" red="0.26599581576061837" green="0.60361676238400919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="668" width="105" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pbP-ad-de6" secondAttribute="height" multiplier="151:144" id="kUR-F2-faU"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="showSocialView:" destination="rCj-rz-Sem" eventType="touchUpInside" id="2lr-Rq-BBx"/>
-                                </connections>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TG1-md-t2i">
-                                <rect key="frame" x="932" y="499" width="92" height="92"/>
+                                <rect key="frame" x="919" y="461" width="105" height="105"/>
                                 <color key="backgroundColor" red="0.20173364310009478" green="0.4232494997201125" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="Nui-QK-vXO"/>
+                                    <constraint firstAttribute="height" constant="105" id="oof-tT-bh4"/>
                                     <constraint firstAttribute="width" secondItem="TG1-md-t2i" secondAttribute="height" id="y0c-MA-aKW"/>
                                 </constraints>
-                                <state key="normal">
+                                <state key="normal" backgroundImage="popular.jpg">
                                     <color key="titleColor" red="0.31768646090000002" green="1" blue="0.1836812001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -265,7 +306,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lat-JP-oaQ">
-                                <rect key="frame" x="932" y="681" width="92" height="87"/>
+                                <rect key="frame" x="919" y="668" width="105" height="100"/>
                                 <color key="backgroundColor" red="0.1910942425040093" green="0.42839036557612575" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lat-JP-oaQ" secondAttribute="height" multiplier="151:144" id="2vQ-S7-jUW"/>
@@ -275,10 +316,11 @@
                                 </state>
                                 <connections>
                                     <action selector="watchLaterTouch:" destination="rCj-rz-Sem" eventType="touchUpInside" id="Cao-fQ-ETa"/>
+                                    <segue destination="g2e-KP-Elz" kind="presentation" id="m1V-ut-whG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6X-4a-a6w">
-                                <rect key="frame" x="932" y="592" width="92" height="88"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6X-4a-a6w">
+                                <rect key="frame" x="919" y="567" width="105" height="100"/>
                                 <color key="backgroundColor" red="0.1910942425040093" green="0.42839036557612575" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="r6X-4a-a6w" secondAttribute="height" multiplier="151:144" id="8K5-19-Qen"/>
@@ -292,7 +334,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76f-j9-n87">
-                                <rect key="frame" x="0.0" y="499" width="92" height="92"/>
+                                <rect key="frame" x="0.0" y="461" width="105" height="105"/>
                                 <color key="backgroundColor" red="0.1785682649" green="0.72579308710000001" blue="0.080668670080000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="76f-j9-n87" secondAttribute="height" id="mU1-a5-DZH"/>
@@ -311,6 +353,14 @@
                                     <segue destination="fxK-t6-XRl" kind="presentation" id="avN-hJ-dhb"/>
                                 </connections>
                             </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUA-dl-e1x" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="461"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rCj-rz-Sem" id="ukC-Bf-GLF"/>
+                                    <outlet property="delegate" destination="rCj-rz-Sem" id="6Gc-8i-hSl"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -342,7 +392,7 @@
                             <constraint firstItem="r6X-4a-a6w" firstAttribute="leading" secondItem="gaq-TH-N8l" secondAttribute="trailing" id="glf-5x-pRS"/>
                             <constraint firstItem="Rc8-He-35y" firstAttribute="top" secondItem="gaq-TH-N8l" secondAttribute="bottom" id="j1R-I9-4d5"/>
                             <constraint firstItem="bUA-dl-e1x" firstAttribute="leading" secondItem="15I-Tz-8Tt" secondAttribute="leading" id="oEs-Zi-X48"/>
-                            <constraint firstItem="bUA-dl-e1x" firstAttribute="height" secondItem="15I-Tz-8Tt" secondAttribute="height" multiplier="0.65" id="uwB-5k-0UX"/>
+                            <constraint firstItem="bUA-dl-e1x" firstAttribute="height" secondItem="15I-Tz-8Tt" secondAttribute="height" multiplier="0.6" id="uwB-5k-0UX"/>
                             <constraint firstItem="76f-j9-n87" firstAttribute="top" secondItem="bUA-dl-e1x" secondAttribute="bottom" id="zVV-Ro-6QC"/>
                         </constraints>
                         <variation key="default">
@@ -361,7 +411,6 @@
                         <outlet property="mostRated" destination="r6X-4a-a6w" id="UdR-4m-fFf"/>
                         <outlet property="moviesCarousel" destination="bUA-dl-e1x" id="Gjs-GO-v1R"/>
                         <outlet property="searchButton" destination="0U8-Mj-CCa" id="riL-xi-h3z"/>
-                        <outlet property="shareButton" destination="pbP-ad-de6" id="YDZ-SO-Mfr"/>
                         <outlet property="showMapButton" destination="76f-j9-n87" id="bjR-il-Rk8"/>
                         <outlet property="watchLater" destination="lat-JP-oaQ" id="iV5-Zb-pRg"/>
                     </connections>
@@ -437,6 +486,47 @@
             </objects>
             <point key="canvasLocation" x="786" y="1291"/>
         </scene>
+        <!--Data Source-->
+        <scene sceneID="6aE-RO-NpE">
+            <objects>
+                <viewController id="g2e-KP-Elz" customClass="MOAWatchLaterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XhW-cw-Aff"/>
+                        <viewControllerLayoutGuide type="bottom" id="RDX-kY-vfC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3qH-p7-3Iw">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yh8-fN-sTO">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="769"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ndj-YL-jJJ" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="389"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="g2e-KP-Elz" id="MDG-Dk-zCR"/>
+                                    <outlet property="delegate" destination="g2e-KP-Elz" id="yij-ji-mOj"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWS-Rj-vzc">
+                                <rect key="frame" x="20" y="659" width="170" height="101"/>
+                                <state key="normal" image="back.png"/>
+                                <connections>
+                                    <segue destination="rCj-rz-Sem" kind="presentation" id="OZv-eo-u9d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="moviesCarousel" destination="ndj-YL-jJJ" id="Eyq-ls-IaC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QmP-8m-PFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1032" y="511"/>
+        </scene>
         <!--Collections View Controller-->
         <scene sceneID="yUn-6C-WSZ">
             <objects>
@@ -501,10 +591,13 @@
         <image name="MOAMapIconStreetView.png" width="512" height="512"/>
         <image name="back.png" width="256" height="256"/>
         <image name="bg.jpg" width="2560" height="1600"/>
+        <image name="fav.png" width="608" height="590"/>
         <image name="home.png" width="128" height="128"/>
+        <image name="popular.jpg" width="1641" height="1265"/>
+        <image name="share.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nUA-vU-Tim"/>
-        <segue reference="i48-6X-HWS"/>
+        <segue reference="JHw-pH-leU"/>
+        <segue reference="Jre-Gv-JQK"/>
     </inferredMetricsTieBreakers>
 </document>

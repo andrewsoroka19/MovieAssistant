@@ -14,6 +14,7 @@
 @property(strong, nonatomic) NSString *movieYear;
 @property(strong, nonatomic) NSString *movieGenres;
 @property(strong, nonatomic) NSString *movieRating;
+@property(strong, nonatomic) NSNumber *youTubeID1;
 
 + (MOAMovieManager *)newMoviewWithName:(NSString *)name
                                andYear:(NSString *)year
@@ -21,6 +22,7 @@
                              andRating:(NSString *)rating
                         andDescription:(NSString *)description
                              andPoster:(NSString *)poster
-                            andTrailer:(NSString *)trailer;
+                            andTrailer:(NSString *)trailer
+                         andYouTubeID :(NSNumber *)youTubeID1;
 
 @end

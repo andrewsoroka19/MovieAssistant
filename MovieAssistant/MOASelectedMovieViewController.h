@@ -16,6 +16,8 @@
 @property(weak, nonatomic) IBOutlet UILabel *movieYear;
 @property(weak, nonatomic) IBOutlet UILabel *movieRating;
 @property(weak, nonatomic) IBOutlet UITextView *movieDescription;
+@property(strong, nonatomic) MOATrailer *selectedTrailer;
+
 
 @property(strong, nonatomic) NSString *moviePosterString;
 @property(strong, nonatomic) NSString *movieTitleString;

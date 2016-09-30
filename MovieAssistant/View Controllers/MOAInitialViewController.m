@@ -4,7 +4,7 @@
 //  Copyright © 2016 lv189.ios. All rights reserved.
 
 #import "MOAInitialViewController.h"
-
+//dasdasdasdasdas
 #import "MOADownloadManager.h"
 #import "MOAMovieManager.h"
 #import "MOAMovieSearchController.h"
@@ -14,6 +14,8 @@
 
 #import <AFNetworking/AFNetworking.h>
 
+#import <Realm/Realm.h>
+#import "SHADataRealm.h"
 
 #pragma mark - Interface:
 
@@ -34,8 +36,7 @@
 // Networking:
 @property (strong, nonatomic) NSMutableArray* arrayWithDataForCollections;
 @property(strong, nonatomic) NSMutableArray<MOAMovieManager *> *arrayWithMovies;
-//@property(strong, nonatomic) NSMutableArray<MOAMovieManager *> *arrayWithMoviesTopRated;
-//@property(strong, nonatomic) NSMutableArray<MOAMovieManager *> *arrayWithMoviesMostPopular;
+
 
 // Button's actions:
 - (IBAction)mostPopularTouch:(id)sender;
@@ -51,30 +52,28 @@
 @implementation MOAInitialViewController
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
+    [super viewDidLoad];
     
-//    self.arrayWithDataForCollections = [NSMutableArray array];
-
-// Set Buttons:
-    [_watchLater setBackgroundImage:[UIImage imageNamed:@"button.ico"] forState:UIControlStateNormal];
+    
+    // Set Buttons:
+    [_watchLater setBackgroundImage:[UIImage imageNamed:@"watch.jpg"] forState:UIControlStateNormal];
     _watchLater.backgroundColor = [UIColor clearColor];
-    [_mostRated setBackgroundImage:[UIImage imageNamed:@"button.ico"] forState:UIControlStateNormal];
+    [_mostRated setBackgroundImage:[UIImage imageNamed:@"rated.jpg"] forState:UIControlStateNormal];
     _mostRated.backgroundColor = [UIColor clearColor];
-    [_mostPopular setBackgroundImage:[UIImage imageNamed:@"button.ico"] forState:UIControlStateNormal];
+    [_mostPopular setBackgroundImage:[UIImage imageNamed:@"popular.jpg"] forState:UIControlStateNormal];
     _mostPopular.backgroundColor = [UIColor clearColor];
     [_showMapButton setBackgroundImage:[UIImage imageNamed:@"map.png"] forState:UIControlStateNormal];
     _showMapButton.backgroundColor = [UIColor clearColor];
-    [_shareButton setBackgroundImage:[UIImage imageNamed:@"share.png"] forState:UIControlStateNormal];
     _shareButton.backgroundColor = [UIColor clearColor];
     [_searchButton setBackgroundImage:[UIImage imageNamed:@"search.ico"] forState:UIControlStateNormal];
     _searchButton.backgroundColor = [UIColor clearColor];
     
-  [self initDefaultMovies];
+    [self initDefaultMovies];
 }
 
 // Default movies on starting view:
 - (void)initDefaultMovies {
-
+    
     self.arrayWithMovies = [NSMutableArray array];
     
     
@@ -88,7 +87,8 @@
                                          andRating:[film.rating stringValue]
                                          andDescription:film.movieDescription
                                          andPoster:film.posterPath
-                                         andTrailer:@"ZIM1HydF9UA"];
+                                         andTrailer:film.youtubekey
+                                         andYouTubeID :film.youtubeId];
             
             [self.arrayWithMovies addObject:upComing];
         }
@@ -97,26 +97,26 @@
 }
 // Carousel data load:
 - (void)configureCarusels {
-
+    
     self.moviesCarousel.delegate = self;
     self.moviesCarousel.dataSource = self;
     self.moviesCarousel.type = iCarouselTypeCoverFlow;
     [self.moviesCarousel reloadData];
     
-    [self.moviesCarousel scrollToItemAtIndex:self.arrayWithMovies.count / 2 duration:3.f];
+    [self.moviesCarousel scrollToItemAtIndex:self.arrayWithMovies.count / 2 duration:5.f];
 }
 
 
 #pragma mark - iCarousel delegete
 
 - (NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel {
-
+    
     return self.arrayWithMovies.count;
 }
 
 // Carousel View:
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(nullable UIView *)view {
-  
+    
     UIView *movieView = nil;
     
     //create new view if no view is available for recycling
@@ -128,7 +128,7 @@
         movieView = a.lastObject;
         movieView.frame = view.bounds;
         movieView.tag = 999;
-
+        
         [view addSubview:movieView];
     }
     
@@ -141,25 +141,25 @@
     UIImageView *iv = [movieView viewWithTag:1];
     [MOADownloadManager imageView:iv
                 loadImageWithPath:[self.arrayWithMovies objectAtIndex:index]
-                                      .moviePoster];
+     .moviePoster];
     UILabel *l = [movieView viewWithTag:2];
-    l.text = @"123";
+    l.text = [self.arrayWithMovies objectAtIndex:index].movieName;
     
     return view;
 }
 
 // Carousel View Width:
 - (CGFloat)carouselItemWidth:(iCarousel *)carousel {
-
+    
     return  CGRectGetHeight(carousel.frame)*0.65;
 }
 
 - (void)carouselDidEndScrollingAnimation:(iCarousel *)carousel {
-
-  self.movieInfoLabel.text = [NSString
-      stringWithFormat:@"%@", [self.arrayWithMovies
-                                  objectAtIndex:carousel.currentItemIndex]
-                                  .movieDescription];
+    
+    self.movieInfoLabel.text = [NSString
+                                stringWithFormat:@"%@", [self.arrayWithMovies
+                                                         objectAtIndex:carousel.currentItemIndex]
+                                .movieDescription];
 }
 
 // Current view did select:
@@ -176,41 +176,13 @@
 #pragma mark - Working with components
 
 - (void)updateMovieInfoLabel:(NSString *)movieInfo {
-  self.movieInfoLabel.text = [NSString stringWithFormat:@"%@", movieInfo];
-
+    self.movieInfoLabel.text = [NSString stringWithFormat:@"%@", movieInfo];
+    
 }
 
 
-#pragma mark - Social network sharing
-
-- (IBAction)showSocialView:(id)sender {
-
-  NSString *shareText = [NSString
-      stringWithFormat:@"Nice movie: %@!",
-                       [self.arrayWithMovies
-                           objectAtIndex:self.arrayWithMovies.count / 2]
-                           .movieName];
-  NSArray *itemsToShare = @[ shareText ];
-  UIActivityViewController *activity =
-      [[UIActivityViewController alloc] initWithActivityItems:itemsToShare
-                                        applicationActivities:nil];
-  activity.popoverPresentationController.sourceView = self.shareButton;
-  activity.popoverPresentationController.sourceRect = ((UIView *)sender).bounds;
-  activity.excludedActivityTypes = @[ UIActivityTypeCopyToPasteboard ];
-  [self presentViewController:activity animated:YES completion:nil];
-}
 
 - (IBAction)mostPopularTouch:(id)sender {
-    // Call Soroka method to fill self.arrayWithData...
-//    self.arrayWithMovies = [NSMutableArray array];
-//    
-//    [MOADownloadManager fetchAllMoviesWithCompletionUpComing:^(NSArray *films) {
-//        [self.arrayWithMovies addObjectsFromArray:films];
-//        NSArray *posterPathUpComing = [_arrayWithMovies valueForKeyPath:@"@distinctUnionOfObjects.posterPath"];
-//        [self.arrayWithMovies removeAllObjects];
-//        [self.arrayWithMovies addObjectsFromArray:posterPathUpComing];
-//        NSLog(@"");
-//    }];
     
     self.arrayWithDataForCollections = [NSMutableArray array];
     
@@ -225,8 +197,8 @@
                                             andRating:[film.rating stringValue]
                                             andDescription:film.movieDescription
                                             andPoster:film.posterPath
-                                            andTrailer:@"ZIM1HydF9UA"];
-            
+                                            andTrailer:film.youtubekey
+                                            andYouTubeID :film.youtubeId ];
             
             [self.arrayWithDataForCollections addObject:mostPopular];
         }
@@ -250,9 +222,10 @@
                                          andRating:[film.rating stringValue]
                                          andDescription:film.movieDescription
                                          andPoster:film.posterPath
-                                         andTrailer:@"ZIM1HydF9UA"];
+                                         andTrailer:film.youtubekey
+                                         andYouTubeID :film.youtubeId];
             
-            [self.arrayWithDataForCollections addObject:topRated];
+            [_arrayWithDataForCollections addObject:topRated];
         }
         
         
@@ -262,12 +235,13 @@
 
 
 - (IBAction)watchLaterTouch:(id)sender {
-    [self performSegueWithIdentifier:@"toCollections" sender:self];
+    
 }
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
- // Make sure your segue name in storyboard is the same as this line
+    // Make sure your segue name in storyboard is the same as this line
     if ([[segue identifier] isEqualToString:@"toCollections"])
     {
         // Get reference to the destination view controller

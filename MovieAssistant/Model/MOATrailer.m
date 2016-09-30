@@ -11,17 +11,16 @@
 @implementation MOATrailer
 
 + (MOATrailer *)initWithDictionary:(NSDictionary *)dictionary {
-  MOATrailer *trailer = [[MOATrailer alloc] init];
-
-
-  NSString *youtubekey = dictionary[@"key"];
-  NSString *trailerURLLink = [NSString
-      stringWithFormat:@"https://www.youtube.com/watch?v=%@", youtubekey];
-
-  trailer.youtubekey = trailerURLLink;
-  trailer.youtubeID = youtubekey;
-
-  return trailer;
+    MOATrailer *trailer = [[MOATrailer alloc] init];
+    
+    
+    NSString *youtubekey = dictionary[@"key"];
+    NSString *trailerURLLink = [NSString
+                                stringWithFormat:@"https://www.youtube.com/watch?v=%@", youtubekey];
+    
+    trailer.youtubekey = trailerURLLink;
+    trailer.youtubeID = youtubekey;
+    return trailer;
 }
 
 @end

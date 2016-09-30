@@ -13,19 +13,22 @@
                              andRating:(NSString *)rating
                         andDescription:(NSString *)description
                              andPoster:(NSString *)poster
-                            andTrailer:(NSString *)trailer {
+                            andTrailer:(NSString *)trailer
+                         andYouTubeID :(NSNumber *)youTubeID1{
     
-  MOAMovieManager *newMovie = [MOAMovieManager new];
-
-  newMovie.movieName = name;
-  newMovie.movieYear = year;
-  newMovie.movieGenres = genres;
-  newMovie.movieRating = rating;
-  newMovie.movieDescription = description;
-  newMovie.moviePoster = poster;
-  newMovie.movieYouTubeID = trailer;
-
-  return newMovie;
+    MOAMovieManager *newMovie = [MOAMovieManager new];
+    
+    newMovie.movieName = name;
+    newMovie.movieYear = year;
+    newMovie.movieGenres = genres;
+    newMovie.movieRating = rating;
+    newMovie.movieDescription = description;
+    newMovie.moviePoster = poster;
+    newMovie.movieYouTubeID = trailer;
+    newMovie.youTubeID1 = youTubeID1;
+    
+    
+    return newMovie;
 }
 
 @end
